@@ -23,12 +23,8 @@ Hi, in this repository, you will find a simple refactoring proposal solution for
     new Product('Super Sale', 3, 6),
 ]
 ```
-
-The result must be the same that file products_after_30_days.txt. 
-The values can be changed to be validated.
-
 5. To run Unit Testing, just run the following command "npm run test" to validate:
 
 - Each Product Coverage Condition is Correct.
 - Data responses
-- Entitiy (Product)
+- Entity (Product)
