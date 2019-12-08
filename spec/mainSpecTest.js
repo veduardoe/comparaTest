@@ -42,10 +42,10 @@ describe("Testing Each Product Condition", function() {
   });
 
   it('Testing: ' + enumProducts.SUPERSALE , function() {
-    const item = new CarInsurance([new Product(enumProducts.SUPERSALE, 0, 3)]);
+    const item = new CarInsurance([new Product(enumProducts.SUPERSALE, 2, 4)]);
     const products = item.updatePrice();
-    expect(products[0].sellIn).equal(-1);
-    expect(products[0].price).equal(1);
+    expect(products[0].sellIn).equal(1);
+    expect(products[0].price).equal(2);
   });
 
 });

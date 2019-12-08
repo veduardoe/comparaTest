@@ -54,7 +54,7 @@ class CarInsurance {
 
             case enumProducts.SUPERSALE:
 
-                product.price = (product.sellIn <= 0) ? product.price - 2 : product.price - 1;
+                product.price = (product.sellIn <= 0) ? product.price - 4 : product.price - 2;
 
                 break;
 
