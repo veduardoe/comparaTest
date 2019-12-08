@@ -1,15 +1,5 @@
 const enumProducts = require('./enums');
 
-class Product {
-
-    constructor(name, sellIn, price) {
-        this.name = name;
-        this.sellIn = sellIn;
-        this.price = price;
-    }
-
-}
-
 class CarInsurance {
 
     constructor(products = []) {
@@ -25,6 +15,8 @@ class CarInsurance {
     }
 
     evaluateProduct(product) {
+
+        let evaluateProduct = true;
 
         switch (product.name) {
 
@@ -69,13 +61,13 @@ class CarInsurance {
 
             default:
 
-                /** Do something extra if there's no coincidence */
+                    evaluateProduct = false;
 
                 break;
 
         }
 
-        if (product.name != enumProducts.MEGA) {
+        if (product.name != enumProducts.MEGA && evaluateProduct) {
 
             product.price = (product.price < 0) ? 0 : ((product.price > 50) ? 50 : product.price);
             product.sellIn--;
@@ -87,7 +79,4 @@ class CarInsurance {
     }
 }
 
-module.exports = {
-    Product,
-    CarInsurance
-}
+module.exports = CarInsurance;
