@@ -19,9 +19,13 @@ const productPrinter = function (product) {
     console.log(`${product.name}, ${product.sellIn}, ${product.price}`);
   };
   
-  for (let i = 1; i <= 30; i += 1) {
+  for (let i = 0; i <= 30; i += 1) {
     console.log(`Day ${i}`);
     console.log('name, sellIn, price');
-    carInsurance.updatePrice().forEach(productPrinter);
-    console.log('');
+    if(i > 0){
+        carInsurance.updatePrice().forEach(productPrinter);
+    }else{
+        carInsurance.displayProduct().forEach(productPrinter);
+    }
+    console.log('')
   }

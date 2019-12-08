@@ -76,6 +76,10 @@ class CarInsurance {
         return product;
 
     }
+
+    displayProduct(){
+        return this.products;
+    }
 }
 
 module.exports = CarInsurance;
