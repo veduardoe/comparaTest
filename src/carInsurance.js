@@ -10,7 +10,6 @@ class CarInsurance {
         for (let product of this.products) {
             product = this.evaluateProduct(product);
         }
-
         return this.products;
     }
 
@@ -29,7 +28,7 @@ class CarInsurance {
 
             case enumProducts.FULL:
 
-                product.price = (product.sellIn < 0) ? product.price + 2 : product.price + 1;
+                product.price = (product.sellIn <= 0) ? product.price + 2 : product.price + 1;
 
                 break;
 
@@ -41,7 +40,7 @@ class CarInsurance {
 
             case enumProducts.SPECIALFULL:
 
-                if(product.sellIn < 0){
+                if(product.sellIn <= 0){
                     product.price = 0;
                 }else if(product.sellIn <= 5){
                     product.price = product.price + 3;
@@ -55,13 +54,13 @@ class CarInsurance {
 
             case enumProducts.SUPERSALE:
 
-                product.price = (product.sellIn < 0) ? product.price - 4 : product.price - 2;
+                product.price = (product.sellIn <= 0) ? product.price - 2 : product.price - 1;
 
                 break;
 
             default:
 
-                    evaluateProduct = false;
+                evaluateProduct = false;
 
                 break;
 
