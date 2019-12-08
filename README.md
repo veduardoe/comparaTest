@@ -7,7 +7,7 @@ Hi, in this repository, you will find a simple refactoring proposal solution for
 1. Clone this repository
 2. Be sure that you have installed Nodejs + NPM
 3. Open terminal from the Root project and run "npm install" to install "Mocha Chai".
-4. To run application, just run the following command "npm start" and the console will print the "Products After 30 Days" according the following configuration:
+4. To run application, just run the following command "npm run after-30-days" and the console will print the "Products After 30 Days" according the following configuration:
 
 ```js
 
@@ -27,7 +27,7 @@ Hi, in this repository, you will find a simple refactoring proposal solution for
 The result must be the same that file products_after_30_days.txt. 
 The values can be changed to be validated.
 
-5. To run Unit Testing, just run the following command "npm test" to validate:
+5. To run Unit Testing, just run the following command "npm run test" to validate:
 
 - Each Product Coverage Condition is Correct.
 - Data responses
