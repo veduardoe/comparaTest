@@ -9,6 +9,8 @@ Hi, in this repository, you will find a simple refactoring proposal solution for
 3. Open terminal from the Root project and run "npm install" to install "Mocha Chai".
 4. To run application, just run the following command "npm start" and the console will print the "Products After 30 Days" according the following configuration:
 
+```js
+
 [
     new Product('Medium Coverage', 10, 20),
     new Product('Full Coverage', 2, 0),
@@ -20,6 +22,7 @@ Hi, in this repository, you will find a simple refactoring proposal solution for
     new Product('Special Full Coverage', 5, 49),
     new Product('Super Sale', 3, 6),
 ]
+```
 
 The result must be the same that file products_after_30_days.txt. 
 The values can be changed to be validated.
@@ -29,5 +32,3 @@ The values can be changed to be validated.
 - Each Product Coverage Condition is Correct.
 - Data responses
 - Entitiy (Product)
-
-
