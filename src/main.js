@@ -27,5 +27,5 @@ const productPrinter = function (product) {
     }else{
         carInsurance.displayProduct().forEach(productPrinter);
     }
-    console.log('')
+    console.log('');
   }
